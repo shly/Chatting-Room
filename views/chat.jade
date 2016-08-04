@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome #{name}
+  div#hidden  #{name}
+  form
+    input(id="m" autocomplete="off")
+    button Send
+
