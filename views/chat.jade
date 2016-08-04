@@ -1,10 +1,17 @@
 extends layout
 
+block css
+  link(rel='stylesheet' href='/stylesheets/index.css')
+
 block content
   h1= title
   p Welcome #{name}
   div#hidden  #{name}
-  form
+  div.controller
+   form
     input(id="m" autocomplete="off")
     button Send
-
+  script(src='/javascripts/jquery-1.11.3.js')
+  script(src='/socket.io/socket.io.js')
+  script(src='/javascripts/chat.js')
+  

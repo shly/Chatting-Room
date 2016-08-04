@@ -36,35 +36,3 @@ body {
 #messages li:nth-child(odd) {
 	background: #eee; 
 }
-.hidden{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 10;
-	background-color: rgba(00,00,00,0.6);
-}
-.dialog{
-	width: 200px;
-	height: 150px;
-	background-color: #ccc;
-	margin: auto;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	bottom:0px;
-	right: 0px;
-	text-align: center;
-
-}
-.dialog input{
-	margin-top: 20px;
-	width: 180px;
-	height: 40px;
-	color: #888;
-
-}
-.dialog input[type='button']{
-	color: #000;
-}
