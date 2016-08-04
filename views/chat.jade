@@ -6,12 +6,12 @@ block css
 block content
   h1= title
   p Welcome #{name}
-  div#hidden  #{name}
+  ul#messages
   div.controller
-   form
+   form(action = '')
     input(id="m" autocomplete="off")
     button Send
+  script(src='http://localhost:3000/socket.io/socket.io.js')
   script(src='/javascripts/jquery-1.11.3.js')
-  script(src='/socket.io/socket.io.js')
   script(src='/javascripts/chat.js')
   

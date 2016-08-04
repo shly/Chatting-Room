@@ -3,7 +3,7 @@ var router = express.Router();
 var persons=[];
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Chatting Room' });
 });
 
 router.route("/login").get(function(req, res, next) {
@@ -13,8 +13,7 @@ router.route("/login").get(function(req, res, next) {
 	/*输入用户名和密码之后执行post操作*/
 	var name = req.body.name;
 	var pwd = req.body.pwd;
-	// if(persons[name]==pwd){
-	if(true){
+	if(persons[name]==pwd){
 		res.render('chat',{name:req.body.name});
 	}else{
 		res.send('对不起，用户名或密码错误');
